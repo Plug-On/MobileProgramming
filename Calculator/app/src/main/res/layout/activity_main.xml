@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/n1"
+        android:layout_marginTop="16dp"
+        android:hint="First Number"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/n2"
+        android:layout_marginTop="16dp"
+        android:hint="Second Number"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rslt"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <GridLayout
+        android:layout_marginTop="16dp"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/add"
+            android:text="+"
+            android:layout_marginTop="16dp"
+            android:layout_columnWeight="1"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/sub"
+            android:text="-"
+            android:layout_marginTop="16dp"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="5dp"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/mul"
+            android:text="*"
+            android:layout_marginTop="16dp"
+            android:layout_columnWeight="1"
+            />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/div"
+            android:text="÷"
+            android:layout_marginTop="16dp"
+            android:layout_columnWeight="1"
+            android:layout_marginLeft="5dp"
+            />
+
+
+    </GridLayout>
+
+</LinearLayout>

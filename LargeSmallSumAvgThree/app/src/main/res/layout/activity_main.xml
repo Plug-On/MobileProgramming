@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/num1"
+        android:hint="Enter first number"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/num2"
+        android:hint="Enter second number"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/num3"
+        android:hint="Enter third number"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/result"
+        android:layout_marginTop="16dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_marginTop="16dp">
+
+    <Button
+        android:text="Largest Number"
+        android:layout_height="wrap_content"
+        android:id="@+id/large"
+        android:layout_marginTop="16dp"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"/>
+
+    <Button
+        android:text="Smallest number"
+        android:layout_height="wrap_content"
+        android:id="@+id/small"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"/>
+
+    <Button
+        android:text="Sum"
+        android:layout_height="wrap_content"
+        android:id="@+id/sum"
+        android:layout_marginTop="16dp"
+        android:layout_width="0dp"
+        android:layout_columnWeight="1"/>
+
+    <Button android:text="Average"
+        android:id="@+id/avg"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_width="0dp"
+        android:layout_marginLeft="5dp"
+        android:layout_columnWeight="1"/>
+    </GridLayout>
+    </LinearLayout>
+
