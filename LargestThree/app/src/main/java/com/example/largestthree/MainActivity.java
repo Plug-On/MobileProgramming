@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
     EditText num3;
     TextView large;
     Button btn;
-    int lrg;
+    double lrg;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
